@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="Lose">Game Over!</string>
+    <string name = "Try_again">Restart</string>
+    <string name="cancel">Quit</string>
+    <string name="Mark">Mark</string>
+    <string name="Open">Open</string>
+    <string name="Win">You Won! </string>
+    <string name="Restart">Restart</string>
+</resources>
