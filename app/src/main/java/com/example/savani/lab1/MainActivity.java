@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     GridLayout layout;
     int rows = 12;
     int cols = 8;
-    int mines = 30;
+    int mines = 20;
     boolean flagOn = false;
     int remainingMines = mines;
     Button flagButton;
@@ -227,16 +227,17 @@ public class MainActivity extends Activity {
                     b.setLayoutParams(buttonLayout);
                 }
             }
-            GridLayout.LayoutParams buttonLayout = new GridLayout.LayoutParams
-                    (GridLayout.spec(2, 2), GridLayout.spec(14, 2));
-            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
-            flagButton.setLayoutParams(buttonLayout);
-            buttonLayout = new GridLayout.LayoutParams(GridLayout.spec(4, 2), GridLayout.spec(14, 2));
-            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
-            counter.setLayoutParams(buttonLayout);
-            buttonLayout = new GridLayout.LayoutParams(GridLayout.spec(6, 2), GridLayout.spec(14, 2));
-            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
-            restart.setLayoutParams(buttonLayout);
+//            GridLayout.LayoutParams buttonLayout = new GridLayout.LayoutParams
+//                    (GridLayout.spec(2, 2), GridLayout.spec(14, 2));
+//            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
+//            flagButton.setLayoutParams(buttonLayout);
+//            buttonLayout = new GridLayout.LayoutParams(GridLayout.spec(4, 2), GridLayout.spec(14, 2));
+//            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
+//            counter.setLayoutParams(buttonLayout);
+//            buttonLayout = new GridLayout.LayoutParams(GridLayout.spec(6, 2), GridLayout.spec(14, 2));
+//            buttonLayout.setGravity(Gravity.FILL_VERTICAL | Gravity.FILL_HORIZONTAL);
+  //          restart.setLayoutParams(buttonLayout);
+            LayoutDesign.landscapeLayoutDesign(counter, flagButton, restart);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             System.out.println("Portrait " + size.x + " " + size.y);
             for (int i = 0; i < rows; i++) {
